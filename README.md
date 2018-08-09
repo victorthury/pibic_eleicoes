@@ -1,2 +1,2 @@
 # pibic_eleicoes
-projeto do pibic
+Projeto do Pibic sobre as eleicoes de 2018
