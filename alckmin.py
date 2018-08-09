@@ -2,6 +2,8 @@ import tweepy
 from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
+import datetime
+fname = "alckmin" + datetime.datetime.now().strftime("%d-%m") + ".json"
 
 consumer_key = '4EQd43EO8zLeeutMYIzyF2kKI'
 consumer_secret = '34W5Vh0ZO16dh6dMkFE7gbizWtwmdyQtViW2o4WOIe87DjKOcK'
@@ -18,7 +20,7 @@ class MyListener(StreamListener):
 
     def on_data(self, data):
         try:
-            with open('alckmin.json', 'a') as f:
+            with open(fname, 'a') as f:
                 f.write(data)
                 return True
         except BaseException as e:

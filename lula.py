@@ -2,6 +2,8 @@ import tweepy
 from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
+import datetime
+fname = "lula" + datetime.datetime.now().strftime("%d-%m") + ".json"
 
 consumer_key = 'lObZp4Hyvn4zHmks23envpygu'
 consumer_secret = 'vpXzv6kVKf7Zezdgntsdl0uWu2rUZikHTgV4sOP9QGUisOuNZg'
@@ -18,7 +20,7 @@ class MyListener(StreamListener):
 
     def on_data(self, data):
         try:
-            with open('lula.json', 'a') as f:
+            with open(fname, 'a') as f:
                 f.write(data)
                 return True
         except BaseException as e:
