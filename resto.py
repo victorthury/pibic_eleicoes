@@ -6,10 +6,10 @@ import datetime
 fname = "resto" + datetime.datetime.now().strftime("%d-%m") + ".json"
 
 
-consumer_key = 'YfETbY1kvwmiuRgmc9NWeKaOu'
-consumer_secret = 'nZkgN5U4U26vjUdNNflEpxjb0HTWoS1QNEKdljPWSADcF9VUw2'
-access_token = '1022198016256696320-eIvJ5VLsC24zWu3rMY0AHzUbVANtXV'
-access_secret = 'uxIVCSwVPKuQMF8xZAnLgMkGEi38ZjntEKxdXLxdOFHvc'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_secret = ''
 
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
