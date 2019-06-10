@@ -5,10 +5,10 @@ from tweepy.streaming import StreamListener
 import datetime
 fname = "marina" + datetime.datetime.now().strftime("%d-%m") + ".json"
 
-consumer_key = 'HwJyyIT74SwGsGZQiuX8IS5NG'
-consumer_secret = 'n5mxMTKeF7XcDHM5c6xcE7kaoaHL4cRAzQp9oyfzdggVPDn9Kq'
-access_token = '1021852203588505601-USEvjD63BvXPsWWnUaBBBr0Kg5EkIE'
-access_secret = 'QZsvmFByC68yGSdUNKNwFRt8ofQQ5Oe2ugIoMOKJQV63y'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_secret = ''
 
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
